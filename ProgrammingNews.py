@@ -33,11 +33,11 @@ print(titles)
 #www.website.com/
 @app.route('/')
 def homepage() :
-    return "This app allows Alexa to read programming headlines!"
+    return "This app allows Alexa to read technology news headlines!"
 
 @ask.launch
 def start_skill():
-    welcome_message = 'Hello there, would you like to hear the latest programming news?'
+    welcome_message = 'Hello there, would you like to hear the latest tech news?'
     return question(welcome_message)
 
 @ask.intent("YesIntent")
